@@ -1,20 +1,21 @@
-
 package teszt;
 
 public class MainForm extends javax.swing.JFrame {
 
     private Helyszin helyszin;
+
     public MainForm() {
         initComponents();
-        
-         helyszin = new Start();
+
+        helyszin = new Start();
+        jTextArea1.insert(helyszin.leiras() + "\n", 0);
         jTextArea1.setText(helyszin.leiras());
-        jTextArea1.insert(helyszin.leiras()+"\n", 0);
+
         jTextArea1.setCaretPosition(0);
         jButton1.setVisible(false);
+
         jButton2.setText(helyszin.gomb());
     }
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -81,15 +82,19 @@ public class MainForm extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         helyszin = helyszin.egyikIrany();
         jTextArea1.setCaretPosition(0);
-        jTextArea1.insert(helyszin.leiras(), 0);
+        jTextArea1.insert(helyszin.leiras() + "\n", 0);
         jTextArea1.setText(helyszin.leiras());
         jButton2.setText(helyszin.gomb());
+        if (helyszin instanceof Masikirany) {
+            jButton1.setVisible(true);
+        }else{
+            jButton1.setVisible(false);
+        }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
 
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {

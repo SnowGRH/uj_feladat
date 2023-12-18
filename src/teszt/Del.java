@@ -1,22 +1,21 @@
 
 package teszt;
 
-
-public class Bal extends Helyszin{
+public class Del extends Helyszin{
 
     @Override
     public String leiras(){
-         return "Ez a jobb!!Menj nyugat vagy keletre!";
+        return "Ez a Dél!Menj tovább";
     }
 
     @Override
     public Helyszin egyikIrany() {
-        return new Del();
+        return this;
     }
 
     @Override
     public String gomb() {
-       return "Dél!!";
+       return "ismeretlen!!";
     }
     
 }

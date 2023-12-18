@@ -8,7 +8,7 @@ package teszt;
  *
  * @author vinczeffy.gergely
  */
-public class Kezdes extends Helyszin{
+public class Kezdes extends Helyszin implements Masikirany{
 
     @Override
     public String leiras() {
@@ -17,12 +17,12 @@ public class Kezdes extends Helyszin{
 
     @Override
     public Helyszin egyikIrany() {
-        return new Bal();
+        return new Jobb();
     }
 
     @Override
     public String gomb() {
-        return "menj balra!";
+        return "jobb";
     }
     
 }

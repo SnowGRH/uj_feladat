@@ -1,12 +1,11 @@
 
 package teszt;
 
-
-public class Bal extends Helyszin{
+public class Jobb extends Helyszin{
 
     @Override
-    public String leiras(){
-         return "Ez a jobb!!Menj nyugat vagy keletre!";
+    public String leiras() {
+        return "Ez a jobb!!Menj Délre vagy Északra!";
     }
 
     @Override
