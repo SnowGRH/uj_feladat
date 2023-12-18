@@ -8,7 +8,7 @@ package teszt;
  *
  * @author vinczeffy.gergely
  */
-public class Teszt {
+public class Jatek {
 
     /**
      * @param args the command line arguments

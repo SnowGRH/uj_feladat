@@ -3,4 +3,8 @@
 # a problema 
 # nehéz mozgás és komplikált 
 #otletelések
-#state el haladunk tovább 
+épitő - build 
+állapot -state 
+díszitő - decorator
+megfigyelő - ovserver 
+#megolda:state el haladunk tovább 
