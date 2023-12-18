@@ -3,6 +3,7 @@ package teszt;
 public class MainForm extends javax.swing.JFrame {
 
     private Helyszin helyszin;
+    private Masikirany masikirany;
 
     public MainForm() {
         initComponents();
@@ -87,13 +88,24 @@ public class MainForm extends javax.swing.JFrame {
         jButton2.setText(helyszin.gomb());
         if (helyszin instanceof Masikirany) {
             jButton1.setVisible(true);
+            jButton1.setText(((Masikirany) helyszin).gomb1());
         }else{
             jButton1.setVisible(false);
         }
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+        helyszin =  ((Masikirany)helyszin).masikIrany();
+        jTextArea1.setCaretPosition(0);
+        jTextArea1.insert(helyszin.leiras() + "\n", 0);
+        jTextArea1.setText(helyszin.leiras());
+        jButton2.setText(helyszin.gomb());
+        if (helyszin instanceof Masikirany) {
+            jButton1.setVisible(true);
+            jButton1.setText(((Masikirany)helyszin).gomb1());
+        }else{
+            jButton1.setVisible(false);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main(String args[]) {

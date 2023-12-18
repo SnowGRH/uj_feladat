@@ -9,5 +9,7 @@ package teszt;
  * @author vinczeffy.gergely
  */
 public interface Masikirany {
-    
+    public Helyszin masikIrany();
+    public String gomb1();
+
 }

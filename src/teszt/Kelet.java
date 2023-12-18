@@ -8,31 +8,31 @@ package teszt;
  *
  * @author vinczeffy.gergely
  */
-public class Kezdes extends Helyszin implements Masikirany{
+public class Kelet extends Helyszin implements Masikirany {
 
     @Override
     public String leiras() {
-        return "Ez a kezdés!Menj balra!";
+        return "ez a  kelelt! menj ny1 vagy ny2";
     }
 
     @Override
     public Helyszin egyikIrany() {
-        return new Jobb();
+        return this;
     }
 
     @Override
     public String gomb() {
-        return "jobb";
+        return "ny1";
     }
 
     @Override
     public Helyszin masikIrany() {
-         return new Bal();
+        return this;
     }
 
     @Override
     public String gomb1() {
-        return "bal";
+        return "ny1";
     }
     
 }
