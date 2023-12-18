@@ -8,10 +8,11 @@ package teszt;
  *
  * @author vinczeffy.gergely
  */
-public class Start extends Helyszin{
-   
+public class Kezdes extends Helyszin{
+
     @Override
-    public String leiras(){
-        return "Ez a start!";
+    public String leiras() {
+        return "Ez a kezdés!";
     }
+    
 }
